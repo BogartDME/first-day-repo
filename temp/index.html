@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        let name = "EP";
+        var num1 = 309;
+        var check = false;
+        let num2 = 12;
+        console.log(name, typeof name);
+      }
+
+      let name = 12321;
+      let greetings = "Hell";
+      console.log(name, typeof name);
+      console.log(num1, typeof num1);
+      console.log(check, typeof check);
+      // console.log(num2, typeof num2);
+      if (name == "12321") {
+        // == compare value only
+        console.log(name, "- is string");
+      }
+      if (name === 12321) {
+        // === compare vale and data type
+        console.log(`${name} is a number`); // template literals
+      }
+      // && || !
+      if (greetings === "Hello" && num1 % 2 === 0) {
+        console.log(`${greetings} num1 is even`);
+      }
+      if (greetings === "Hello" || num1 % 2 === 1) {
+        console.log(`${greetings} num1 is odd or greetings = Hello`);
+      }
+      if (check) {
+        console.log(`This is a good day`);
+      } else {
+        console.log("This is a busy day");
+      }
+      //Fizzbuzz
+      if (num1 % 15 === 0) {
+        console.log("Yes by 15");
+      } else if (num1 % 5 === 0) {
+        console.log("Yes by 5");
+      } else {
+        //default
+        console.log("NOT by 5 or 15");
+      }
+      var arr1 = ["Red", "blue", "Green", "Purple", "Yellow"];
+      for (let i = 0; i < arr1.length; i = i + 2) {
+        console.log(`arr's ${i + 1} element is ${arr1[i]}`);
+      }
+      arr1.push("White");
+      console.log(arr1);
+      console.log("Reverse");
+      for (i = arr1.length - 1; i >= 0; i--) {
+        console.log(`arr's ${i + 1} element is ${arr1[i]}`);
+      }
+      console.log(`Last Element ${arr1.pop()}`);
+
+      console.log(`Last Element ${arr1.pop()}`);
+      console.log(arr1);
+      arr1.shift();
+      console.log(arr1);
+    </script>
+  </body>
+</html>
